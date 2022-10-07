@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang = "en">
+
+<head>
+    <title>Meeting Minutes</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <meta charset = "utf-8">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="https://www.github.com">git-repo</a>
+            <a href="https://www.drive.google.com">drive-folder</a>
+            <a href="https://www.slack.com">slack-workspace</a>
+        </nav>
+
+        <hr>
+
+        <div class="title">
+        <h1>Meeting Minutes:</h1>
+        <h2>"IceBreakers"</h2>
+        <i>10/06/2022</i>
+        </div>
+
+        <div class="attendence">
+            <h3>Attendence:</h3>
+                <ul>
+                    <li>Person1</li>
+                    <li>Person2</li>
+                    <li>Person3</li>
+                    <li>Person4</li>
+                    <li><b><s>Person5</s></b></li>
+                </ul>
+        </div>
+
+        <hr>
+
+        </header>
+
+        <main>
+
+        <div class="agenda">
+        <h3>Agenda</h3>
+            <ol>
+                <li><details>
+                    <summary><strong>Unfinished Business</strong></summary>
+                    <ul>
+                        <li>Introductions</li>
+                        <li>Specialties</li>
+                    </ul>
+                </details></li>
+                <li><details>
+                    <summary><strong>New Business</strong></summary>
+                    <ul>
+                        <li>Subteams</li>
+                        <li>Subteam Meetings</li>
+                    </ul>
+                </details></li>
+                <li><details>
+                    <summary><strong><em>Questions/Concerns</em></strong></summary>
+                    <ul>
+                        <li>Meetings on the weekends???</li>
+                    </ul>
+                </details></li>
+            </ol>
+        </div>
+
+        <hr>
+
+        <section class="media">
+            <h3>Meeting Media</h3>
+            <img src="screenshots/example.png" alt="Placehold" width="500" height="300"> 
+
+            <h3>Meeting Recording</h3>
+            <video width="320" height="240" controls>
+                <source src="video.mp4" type="video/mp4">
+                Your browser does not support mp4 playback
+            </video> 
+            <audio controls>
+                <source src="audio.mp3" type="audio/mpeg">
+                Your browser does not support mp3 playback
+            </audio>
+        </section>
+
+    </main>
+
+    <footer>
+        <hr>
+        <h3>FeedBack Form</h3> 
+        <form>
+            <fieldset>
+                <legend>How Did you Feel About the Meeting</legend>
+                <input type="radio" id="Good" name="feel" value="1">
+                <label for="kraken">Good</label><br>
+            
+                <input type="radio" id="Neutral" name="feel" value="0">
+                <label for="sasquatch">Neutral</label><br>
+            
+                <input type="radio" id="Bad" name="feel" value="-1" />
+                <label for="Bad">Bad</label>
+            </fieldset>
+
+            <p><label for="comments">Comments or Questions:</label></p>
+            <textarea id="comments" name="comments" rows="4" cols="50"></textarea>
+            <br>
+
+            
+            <datalist id="team-members">
+                <option value="person1">
+                <option value="person2">
+                <option value="person3">    
+                <option value="person4">
+                <option value="person5">
+            </datalist>
+            <p>
+                <label for="team-member">Who did you feel went above and beyond this week?</label>
+                <br>
+                <input list="team-members">
+            </p>
+            
+            <select>
+                <option>I don't</option>
+                <option>know what</option>
+                <option>to use</option>
+                <option>this for</option>
+                <option>...</option>
+            </select>
+
+            <button>Submit</button>
+        </form>
+    </footer>
+</body>
+
+</html>
