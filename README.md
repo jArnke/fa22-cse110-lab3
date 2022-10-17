@@ -1,3 +1,3 @@
 # Lab 2 - Starter
 
-https://jarnke.github.io/CSE110_Lab2/
+[link to site](https://jarnke.github.io/fa22-cse110-lab3)
