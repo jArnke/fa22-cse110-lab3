@@ -65,21 +65,28 @@
 
         <hr>
 
-        <section class="media">
-            <h3>Meeting Media</h3>
-            <img src="screenshots/example.png" alt="Placehold" width="500" height="300"> 
+        <h3 style="padding-top: .5cm; text-align: center;">Meeting Media</h3>
+        <div class="media">
+            <div id="extra-media">
+                <img src="screenshots/example.png" alt="Placehold" width="500" height="300"> 
+            </div>
+            <div id="meeting-recording">
+                <video width="320" height="240" controls>
+                    <source src="video.mp4" type="video/mp4">
+                    Your browser does not support mp4 playback
+                </video>
 
-            <h3>Meeting Recording</h3>
-            <p>Placeholder video from <a href="https://www.youtube.com/watch?v=UBWl37Rr9_c&t=5s">Here</a></p>
-            <video width="320" height="240" controls>
-                <source src="video.mp4" type="video/mp4">
-                Your browser does not support mp4 playback
-            </video> 
-            <audio controls>
-                <source src="audio.mp3" type="audio/mpeg">
-                Your browser does not support mp3 playback
-            </audio>
-        </section>
+                <p>Placeholder video from <a href="https://www.youtube.com/watch?v=UBWl37Rr9_c&t=5s">Here</a></p> 
+                
+                <audio controls>
+                    <source src="audio.mp3" type="audio/mpeg">
+                    Your browser does not support mp3 playback
+                </audio>
+                
+                <p> audio only </p> 
+                
+            </div>
+        </div>
 
     </main>
 
