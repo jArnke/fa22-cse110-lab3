@@ -7,7 +7,7 @@ body, header, footer{
 }
 
 #navbar{
-    margin: 5px 0 0 5px;
+    margin-top: 5px;;
     padding: 0px;
     border-width: 0px;
     display: flex;
@@ -26,6 +26,13 @@ a.nav-element{
     border-color: black;
     border-width: 2px;
     border-style: solid;
+}
+#drive-link{
+    order:1;
+}
+#slack-link{
+    flex-grow: 2;
+    order: 0;
 }
 .nav-element:hover {
     background-color: grey;
@@ -71,8 +78,10 @@ hr{
 
 /*Agenda Section*/
 #agenda{
+    width: 70vw;
+    margin: auto;
     display: grid;
-    grid-template-columns: 30vw 30vw 30vw;
+    grid-template-columns: 30% 30% 30%;
     grid-template-rows: 40px 200px;
     grid-template-areas: 
         ". title ."
