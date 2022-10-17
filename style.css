@@ -6,8 +6,12 @@ body, header, footer{
     margin: 0px;
 }
 
+h1, h2, h3{
+    font-family: "Roboto";
+}
 #navbar{
-    margin-top: 5px;;
+    position: sticky;
+    top: 5px;
     padding: 0px;
     border-width: 0px;
     display: flex;
@@ -18,34 +22,39 @@ a.nav-element{
     display: inline;
     padding: 10px;
     margin: 0 20px 0 20px;
-    background-color: white;
+    background-color: rgba(56, 100, 69, 0.666);
     width: 200px;
     text-align: center;
     text-decoration: none;
     color: black;
     border-color: black;
-    border-width: 2px;
+    border-width: .15em;
     border-style: solid;
+    border-radius: 30px;
+}
+a[href="https://www.github.com"]{
+    order:1;
 }
 #drive-link{
-    order:1;
+    order:-1;
 }
 #slack-link{
     flex-grow: 2;
     order: 0;
 }
 .nav-element:hover {
-    background-color: grey;
+    background-color: rgba(78, 156, 96, 0.945);
 }
 
 
 /* Title Area */
 #title-container{
+    width: 70vw;
     display: grid;
-    grid-template-columns: 40vw 40vw;
+    grid-template-columns: 50% 50%;
     margin: auto;
     justify-content: center;
-    background-color: whitesmoke;
+    background-color: rgb(116, 195, 178);
 }
 #title{
     place-self: center;
@@ -59,7 +68,7 @@ a.nav-element{
     list-style-type: CIRCLE;
 }
 #attendance li{
-    color: blue
+    color: #0b0b2d
 }
 .attendee ~ .absentee{
     font-weight: bold;
@@ -68,6 +77,8 @@ a.nav-element{
 }
 
 hr{
+    display: block;
+    max-height: 10px;
     margin-top: 10px;
     margin-bottom: 10px;
     margin-left: auto; 
@@ -78,6 +89,7 @@ hr{
 
 /*Agenda Section*/
 #agenda{
+    box-shadow: 0px 0px 31px -6px rgba(0,0,0,0.75) inset;
     width: 70vw;
     margin: auto;
     display: grid;
@@ -89,7 +101,11 @@ hr{
         "section1 section2 section3";
 
 }
-
+@media (max-width: 550px){
+    #agenda{
+        width: 100vw;
+    }
+}
 #agenda h3{
     text-align: center;
     place-self: center;
@@ -132,7 +148,7 @@ audio + p{
     font-style: italic;
     text-align: center;
     padding-bottom: 5px;
-    padding-top: 0px;
+    padding-top: 0;
 }
 #meeting-recording{
     grid-area: recording;
@@ -144,7 +160,20 @@ audio + p{
     align-items: center;
 }
 #extra-media *{
-    width: 100%;
+    max-width: 100%;
+    min-width: 50%;
     height: auto;
 }
 
+a:active {
+    box-shadow: 2px 2px 5px hsla(217, 71%, 49%, 0.443);
+}
+
+
+
+footer h3{
+    position: relative;
+    left: 45vw;
+    width: 10vw;
+    text-align: center;
+}
