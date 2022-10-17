@@ -30,3 +30,32 @@ body{
 .nav-element:hover {
     background-color: grey;
 }
+
+#agenda{
+    display: grid;
+    grid-template-columns: 30vw 30vw 30vw;
+    grid-template-rows: 40px 200px;
+    grid-template-areas: 
+        ". title ."
+        "section1 section2 section3";
+
+}
+
+#agenda h3{
+    place-self: center;
+    grid-area: title;
+}
+
+#agenda details{
+    place-self: center;
+}
+#agenda #item1{
+    grid-area: section1;
+}
+#agenda #item2{
+    grid-area: section2;
+}
+#agenda #item3{
+    grid-area: section3;
+}
+
